@@ -13,7 +13,6 @@ permissions:
        - file
 hooks:
    BeforeInstall:
-<<<<<<< HEAD
     - location: scripts/installapache.sh
       runas: root
     - location: scripts/startapache.sh
@@ -21,12 +20,3 @@ hooks:
    AfterInstall:
     - location: scripts/restartapache.sh
       runas: root
-=======
-    - location: ec2-user/installapache.sh
-      runas: root
-    - location: ec2-user/startapache.sh
-      runas: root
-   AfterInstall:
-    - location: ec2-user/restartapache.sh
-      runas: root
->>>>>>> 31e29d2fbb2bb416f7a38862834ade3cf2187535
