@@ -78,15 +78,3 @@ jobs:
         service: sample-app-service
         cluster: default
         wait-for-service-stability: true
-    - name: AWS S3 Sync Action
-      uses: awact/s3-action@0.1.1
-      with:
-        # AWS Access Key. [AWS Docs](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
-        AWS_ACCESS_KEY_ID: AKIAZB2NHMEHY22GVIT4
-        # AWS Secret Access Key. [AWS Docs](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html)
-        AWS_SECRET_ACCESS_KEY: QYIoUeOIJT1bTNBRT0ki+VwJuXufEP9gWTlOqN+T
-        # The Name of the S3 Bucket.
-        AWS_S3_BUCKET: www.hello-world-website.com
-        # Region of the S3 Bucket
-        AWS_REGION: eu-west-1
-        # Local Directory to Sync/Upload to S3.
